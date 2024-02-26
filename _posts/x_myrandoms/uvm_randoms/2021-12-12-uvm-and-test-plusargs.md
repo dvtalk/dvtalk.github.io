@@ -44,7 +44,7 @@ if($value$plusargs("PLUSARGS_TEST=%d", m_var )) begin
 end 
 
 // notice we will use the "+", not "=" character
-// we actually does not need any special character at all
+// we actually do not need any special character at all
 if($value$plusargs("PLUSARGS_TEST2+%d", m_var )) begin    
   $display ("Found plusargs +PLUSARGS_TEST2 = %d", m_var);
 end 
