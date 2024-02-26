@@ -35,7 +35,7 @@ end
 ### $value$plusargs("PLUSARGS=format string", var)
 Similar to `$test$plusargs`, but the plusargs now comes with a value, and we can assign that value to a variable as below example.
 {% highlight verilog %}
-// Simulator command line argument: +PLUSARGS_TEST=20
+// Simulator command line argument: +PLUSARGS_TEST=20 +PLUSARGS_TEST2+100
 
 int m_plusargs;
 
@@ -43,7 +43,16 @@ if($value$plusargs("PLUSARGS_TEST=%d", m_var )) begin
   $display ("Found plusargs +PLUSARGS_TEST = %d", m_var);
 end 
 
-// m_var now has a value of 20
+// notice we will use the "+", not "=" character
+// we actually does not need any special character at all
+if($value$plusargs("PLUSARGS_TEST2+%d", m_var )) begin    
+  $display ("Found plusargs +PLUSARGS_TEST2 = %d", m_var);
+end 
+
+// The output will be:
+// Found plusargs +PLUSARGS_TEST = 20
+// Found plusargs +PLUSARGS_TEST2 = 100
+
 
 {% endhighlight %}
 
@@ -60,6 +69,7 @@ We can use below format string when get the value from plusargs
 |%f    |real decimal conversion|
 |%g    |real decimal or exponential conversion|
 |%s    |string (no conversion)|
+
 
 
 ---
