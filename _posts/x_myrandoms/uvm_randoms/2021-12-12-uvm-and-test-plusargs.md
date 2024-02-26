@@ -29,15 +29,25 @@ Usually, we will use this function as an expression in the consditional statemen
 
 if($test$plusargs(PLUSARGS_TEST)) begin 
   `uvm_info([PLUSARGS], "Found plusargs +PLUSARGS_TEST", UVM_LOW )
-end 
+end
+
+//
+if($test$plusargs(PLUSARGS)) begin 
+  `uvm_info([PLUSARGS], "Found +PLUSARGS, substring of command line string ", UVM_LOW )
+end
+
+// output will be 
+// Found plusargs +PLUSARGS_TEST
+// Found +PLUSARGS, substring of command line
 {% endhighlight %}
 
 ### $value$plusargs("PLUSARGS=format string", var)
 Similar to `$test$plusargs`, but the plusargs now comes with a value, and we can assign that value to a variable as below example.
 {% highlight verilog %}
-// Simulator command line argument: +PLUSARGS_TEST=20 +PLUSARGS_TEST2+100
+// Simulator command line argument: +PLUSARGS_TEST=20 +PLUSARGS_TEST2+100 +PLUSARGS_TEST3+300+400
 
-int m_plusargs;
+int m_var;
+int m_var2;
 
 if($value$plusargs("PLUSARGS_TEST=%d", m_var )) begin 
   $display ("Found plusargs +PLUSARGS_TEST = %d", m_var);
@@ -49,9 +59,15 @@ if($value$plusargs("PLUSARGS_TEST2+%d", m_var )) begin
   $display ("Found plusargs +PLUSARGS_TEST2 = %d", m_var);
 end 
 
+// we can even has more than one value passed from command line
+if($value$plusargs("PLUSARGS_TEST3+%d+%d", m_var, m_var2 )) begin    
+  $display ("Found plusargs +PLUSARGS_TEST3 = %d, %d", m_var, m_var2);
+end 
+
 // The output will be:
 // Found plusargs +PLUSARGS_TEST = 20
 // Found plusargs +PLUSARGS_TEST2 = 100
+
 
 
 {% endhighlight %}
