@@ -28,12 +28,12 @@ Usually, we will use this function as an expression in the consditional statemen
 // Simulator command line argument: +PLUSARGS_TEST
 
 if($test$plusargs(PLUSARGS_TEST)) begin 
-  `uvm_info([PLUSARGS], "Found plusargs +PLUSARGS_TEST", UVM_LOW )
+  $display("Found plusargs +PLUSARGS_TEST");
 end
 
 //
 if($test$plusargs(PLUSARGS)) begin 
-  `uvm_info([PLUSARGS], "Found +PLUSARGS, substring of command line string ", UVM_LOW )
+  $display("Found +PLUSARGS, substring of command line string ");
 end
 
 // output will be 
