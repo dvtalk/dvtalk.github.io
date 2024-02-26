@@ -38,7 +38,7 @@ end
 
 // output will be 
 // Found plusargs +PLUSARGS_TEST
-// Found +PLUSARGS, substring of command line
+// Found +PLUSARGS, substring of command line string
 //
 {% endhighlight %}
 
