@@ -39,6 +39,7 @@ end
 // output will be 
 // Found plusargs +PLUSARGS_TEST
 // Found +PLUSARGS, substring of command line
+//
 {% endhighlight %}
 
 ### $value$plusargs("PLUSARGS=format string", var)
@@ -67,7 +68,8 @@ end
 // The output will be:
 // Found plusargs +PLUSARGS_TEST = 20
 // Found plusargs +PLUSARGS_TEST2 = 100
-
+// Found plusargs +PLUSARGS_TEST3 = 300, 400
+// 
 
 
 {% endhighlight %}
