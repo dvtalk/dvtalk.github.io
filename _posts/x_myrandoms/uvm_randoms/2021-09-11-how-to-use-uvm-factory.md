@@ -134,7 +134,8 @@ However I have never used these ones.
 uvm factory class is actually a singleton class, and it has several method those will help us debugging:
 {% highlight verilog %}
 // to get the uvm_factory object handle
-uvm_factory m_factory = uvm_core_service_t::get().get_factory();
+uvm_factory m_factory = uvm_core_service_t::get().get_factory(); //uvm1.2
+uvm_factory m_factory = uvm_factory.get();  //uvm1.1d
 
 //print the override information
 m_factory.print();
