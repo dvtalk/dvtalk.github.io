@@ -347,6 +347,25 @@ This post is to store some of Systemverilog std::randomize examples that I creat
    </tr>
 
 
+   <tr>
+      <td> systemverilog std::randomize with this and local:: </td>
+      <td>
+      <div class="code">
+      {% highlight verilog %}
+TDB
+    
+TDB
+
+      {% endhighlight %}
+      </div>
+      </td>
+      <td>
+      <a href="https://www.edaplayground.com/x/UPkP" title="std::randomize with variable of 2 different obj">
+      <svg width="25" height="25" viewBox="0 -0.1 2 2" class="customsvg"> <use xlink:href="#svg-edaplay"></use></svg></a>
+      </td>
+   </tr>
+
+
 </table>
     <script>
       function tablefilter() {
