@@ -147,6 +147,9 @@ m_factory.debug_create_by_name("l2_layer_base"); //assuming the class was create
 {% endhighlight %}
 
 ---
+## Caveats
+1. TBD: Override a by b, then override b by c --> not mean override a by c
+
 
 ## Finding more information
 1. [ How uvm factory actually works ]({{ site.baseurl }}{% link _posts/x_myrandoms/uvm_randoms/2021-09-12-how-uvm-factory-actually-works.md %})
