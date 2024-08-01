@@ -96,6 +96,8 @@ From it properties, a class might need below requirements can be a candidate for
 This could be a class that provide the backdoor access to the memory of DUT, a class that handle all the plusargs that passed from the run time commands 
 or a class to dynamic allocate/deallocate index number of data packets.
 
+### Alternative solution: static method in package
+
 ### Some uvm singleton classes
 If using the uvm methodology, we can see that several classes are actually singleton:
 1. uvm_root and uvm_top:
