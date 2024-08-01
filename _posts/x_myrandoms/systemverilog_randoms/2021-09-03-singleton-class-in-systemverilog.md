@@ -96,7 +96,7 @@ From it properties, a class might need below requirements can be a candidate for
 This could be a class that provide the backdoor access to the memory of DUT, a class that handle all the plusargs that passed from the run time commands 
 or a class to dynamic allocate/deallocate index number of data packets.
 
-### Alternative solution: static method in package
+
 
 ### Some uvm singleton classes
 If using the uvm methodology, we can see that several classes are actually singleton:
@@ -121,6 +121,9 @@ and [ `uvm_barrier_pool` ]({{ site.baseurl }}{% link _posts/x_myrandoms/uvm_rand
 1. uvm_queue:
 * Similar to `uvm_pool`, `uvm_queue` is a class which act as a Systemverilog queue.
 * Defined as singleton class, this queue can be accessed anywhere to share data.
+
+---
+## Alternative solution: static method in package
 
 ---
 ## Finding more information
