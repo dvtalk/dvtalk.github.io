@@ -1,8 +1,8 @@
 ---
 layout: default
 title: How uvm factory actually works
-parent: UVM Randoms
-grand_parent: My Randoms
+parent: UVM How to
+grand_parent: My How to
 description: How uvm factory actually works
 comments: true
 share: true

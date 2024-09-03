@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Using Plusargs in UVM Test
-parent: UVM Randoms
-grand_parent: My Randoms
+parent: UVM How to
+grand_parent: My How to
 description: Using Plusargs in UVM Test
 comments: true
 share: true

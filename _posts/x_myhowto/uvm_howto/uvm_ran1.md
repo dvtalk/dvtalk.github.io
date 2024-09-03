@@ -1,12 +1,12 @@
 ---
 layout: default
-title: How to uvm
-parent: UVM How to
-grand_parent: My How to
+title: UVM Randoms 2
+parent: UVM Randoms
+grand_parent: My Randoms
 nav_order: 1
 ---
 
-# UVM Howto 2
+# UVM Randoms
 It's randoms of vim
 no 2
 {: .fs-6 .fw-300 }

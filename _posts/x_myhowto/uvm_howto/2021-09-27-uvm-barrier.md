@@ -1,8 +1,8 @@
 ---
 layout: default
 title: How to use uvm_barrier and uvm_barrier_pool
-parent: UVM Randoms
-grand_parent: My Randoms
+parent: UVM How to
+grand_parent: My How to
 description: How to use uvm_barrier and uvm_barrier_pool
 comments: true
 share: true

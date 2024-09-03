@@ -1,8 +1,8 @@
 ---
 layout: default
 title: uvm_pool example with Systemverilog semaphore
-parent: UVM Randoms
-grand_parent: My Randoms
+parent: UVM How to
+grand_parent: My How to
 description: uvm_pool example with Systemverilog semaphore 
 comments: true
 share: true
