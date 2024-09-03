@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Forcing Signals with Questasim/ModelSim
-parent: Env Randoms
-grand_parent: My Randoms
+parent: Environment How to
+grand_parent: My How to
 description: Some commands to forcing signals with Questa Simulator (or ModelSim) EDA tool
 comments: true
 tags: [linux_env,eda_tool]
