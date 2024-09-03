@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Differences between uvm test and uvm testbench top
-parent: UVM Randoms
-grand_parent: My Randoms
+parent: UVM How to
+grand_parent: My How to
 description: Differences between uvm test and uvm testbench top 
 comments: true
 share: true
